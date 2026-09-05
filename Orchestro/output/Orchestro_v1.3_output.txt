@@ -1,0 +1,113 @@
+ollama run orchestro:1.3
+>>> Doctor's chambers near me
+<Think>
+To find doctor's chambers near you, I'll first use the Web_Search tool to locate nearby medical facilities and their contact information. This will help us narrow down our search and get a list of potential 
+doctors' chambers in your area.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to find doctor's chambers near my current location</Consent>
+
+
+>>> /clear
+Cleared session context
+>>> Parkinson's disease
+<Think>
+To provide information on Parkinson's disease, I'll start by conducting a research on the topic using Web_Search to gather relevant details and insights from reputable sources. This will help me understand 
+the current state of knowledge on Parkinson's disease, its symptoms, causes, diagnosis, treatment options, and latest research findings.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to get information on Parkinson's disease</Consent>
+
+
+>>> /clear
+Cleared session context
+>>> Get detailed research on fireworks and their chemical compositions. Their main ingredients, market share, special occations. For the result in md file format
+<Think>
+To conduct a thorough research on fireworks and their chemical compositions, I'll need to utilize various tools and resources. First, I'll use Web_Search to gather information on the main ingredients of 
+fireworks, their market share, and special occasions where they're commonly used.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to get detailed research on fireworks and their chemical compositions</Consent>
+    <Consent>Use Docu_Search to search local documents and e-books for additional information on fireworks chemistry</Consent>
+
+
+>>> Get detailed research on dimethyle-acetic acid and their chemical compositions. Their main ingredients, market share, special occations. For the result in md file format
+<Think>
+To conduct a thorough research on dimethylacetic acid (DMA), I'll need to utilize various tools and resources. First, I'll use Web_Search to gather information on DMA's chemical composition, its main 
+ingredients, market share, and special occasions where it's commonly used.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to get detailed research on dimethylacetic acid (DMA) and their chemical compositions</Consent>
+    <Consent>Use Docu_Search to search local documents and e-books for additional information on DMA chemistry</Consent>
+
+
+>>> /clear
+Cleared session context
+>>> Get detailed research on dimethyle-acetic acid and their chemical compositions. Their main ingredients, market share, special occations. For the result in md file format
+<Think>
+To get detailed research on dimethylacetic acid, I'll start by searching for its chemical composition, main ingredients, market share, and special occasions. First, I'll use Web_Search to fetch relevant 
+information from reputable sources.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to get detailed research on dimethylacetic acid</Consent>
+
+
+>>> /clear
+Cleared session context
+>>> Get detailed research on the following topics - Last independence struggle by North-western states of India, contribution of Bengal in securing political power, power of economy during Indian independence
+<Think>
+To conduct a comprehensive research on the specified topics, I will employ various tools to gather information. First, I'll utilize Web_Search to fetch detailed reports and articles from reputable sources 
+such as historical records, academic journals, and news outlets. This will provide me with a broad understanding of the last independence struggle by North-western states of India, the contribution of 
+Bengal in securing political power, and the power of economy during Indian independence.
+
+Next, I'll leverage Docu_Search to access local documents, PDFs, and e-books that might offer unique insights into these topics. This could include historical texts, academic papers, and government records 
+that provide a more in-depth understanding of the subject matter.
+
+Additionally, I'll utilize Text_Summarizer to condense the vast amount of information gathered from Web_Search and Docu_Search into concise summaries. This will enable me to distill the most critical points 
+and present them in an easily digestible format.
+
+By combining these tools and approaches, I aim to provide a comprehensive research report that covers all three topics.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to get detailed reports on the last independence struggle by North-western states of India</Consent>
+    <Consent>Use Docu_Search to access local documents and PDFs related to Bengal's contribution in securing political power</Consent>
+    <Consent>Use Text_Summarizer to condense Web_Search results into concise summaries for each topic</Consent>
+
+
+>>> /clear
+Cleared session context
+>>> Get detailed research on the following topics - Last independence struggle by North-western states of India, contribution of Bengal in securing political power, power of economy during Indian independence
+<Think>
+To conduct a comprehensive research on the specified topics, I will employ various tools to gather information. First, I'll utilize Web_Search to fetch detailed reports and articles on the last independence 
+struggle by North-western states of India, contribution of Bengal in securing political power, and the power of economy during Indian independence. Additionally, I'll use Docu_Search to scour local 
+documents, PDFs, and e-books for relevant information on these topics.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to get detailed research on Last independence struggle by North-western states of India</Consent>
+    <Consent>Use Web_Search to get detailed research on Contribution of Bengal in securing political power</Consent>
+    <Consent>Use Web_Search to get detailed research on Power of economy during Indian independence</Consent>
+    <Consent>Use Docu_Search to search local documents, PDFs, and e-books for relevant information on the above topics</Consent>
+
+
+>>> /clear
+Cleared session context
+>>> new Software engineering openings
+<Think>
+To find the latest software engineering job openings, I'll start by searching for recent postings on popular job boards and tech websites. This will involve using the Web_Search tool to query for relevant 
+keywords such as "software engineer jobs" or "new software engineering openings". After obtaining a list of potential job openings, I can then use the Docu_Search tool to search local documents, PDFs, and 
+e-books for additional information on these positions.
+</think>
+
+<Step>
+    <Consent>Use Web_Search to find recent software engineering job postings</Consent>
+    <Consent>Use Docu_Search to search local documents and e-books for software engineering job openings</Consent>
+
+
+>>> /bye 
