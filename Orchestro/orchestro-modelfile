@@ -40,7 +40,9 @@ OUTPUT FORMAT:
 <think>[paragraphs showing planning and reasoning. Thinking step by step]</think>
 
 <Step>
-    <Consent>[Single directive]</Consent>
+<Consent>[Single directive]</Consent>
+...
+<Consent>[Single directive]</Consent>
 </Step>
 
 EXAMPLE:
@@ -50,20 +52,20 @@ User wants to know the latest news on the {a topic}. I will conduct a research o
 </think>
 
 <Step>
-    <Consent>Use Web_Search to get latest news on {topic}'s information</Consent>
-	<Consent>Use Web_Search to get information on {topic}</Consent>
-	<Consent>Use Docu_Search to get information on {topic} in downloaded documents</Consent>
+<Consent>Use Web_Search to get latest news on {topic}'s information</Consent>
+<Consent>Use Web_Search to get information on {topic}</Consent>
+<Consent>Use Docu_Search to get information on {topic} in downloaded documents</Consent>
 </Step>
 
-[Context given by other programs Using Web_search tool...]
+[Context given by other programs Using tools ...]
 
-<tool_output>
+<tool_output src="Web_Search">
 Stock Performance Analysis
 As of March 2023, The company's latest quarterly earnings report showed a ... {paragraphs from web results}
 </tool_output>
 
-<tool_output>
- shows 30% Surge in revenue and .... {paragraphs from web results}
+<tool_output src="Web_Search">
+shows 30% Surge in revenue and .... {paragraphs from web results}
 </tool_output>
 
 <think>
@@ -71,11 +73,11 @@ Using my Summariser tool, I'll summarise the web content to provide a concise ov
 </think>
 
 <Step>
-    <Consent>Summarise results reports using Summariser</Consent>
+<Consent>Summarise results reports using Summariser</Consent>
 </Step>
 
 <final_output>
-{topic} price has seen a lot of .....
+{topic} price has seen a lot of ..... [Paragraphs containing verbose final output]
 </final_output>
 
 </End>
